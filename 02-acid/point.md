@@ -1,3 +1,4 @@
 - `ACID` is database system principles
 - `read phenomena` is problem
 - `isolation level` is to handle `read phenomena`
+- `isolation level` is how OTHER transaction can see the data
