@@ -1,0 +1,3 @@
+- `ACID` is database system principles
+- `read phenomena` is problem
+- `isolation level` is to handle `read phenomena`
