@@ -16,6 +16,10 @@ docker exec -it pgacid psql -U postgres
 docker run --name pgacid -d -e POSTGRES_PASSWORD=postgres postgres:13
 ```
 
+```
+docker run --name pg -d -e POSTGRES_PASSWORD=postgres --shm-size=1g postgres:13
+```
+
 # list containers
 
 ```
