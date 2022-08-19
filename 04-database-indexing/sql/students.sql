@@ -42,11 +42,31 @@ insert into
     )
 select
     random() * 100,
-    substring(md5(random() :: text), 0, floor(random() * 31) :: int),
-    substring(md5(random() :: text), 0, floor(random() * 31) :: int),
-    substring(md5(random() :: text), 0, floor(random() * 31) :: int),
-    substring(md5(random() :: text), 0, floor(random() * 31) :: int),
-    substring(md5(random() :: text), 0, floor(random() * 31) :: int),
+    substring(
+        md5(random() :: text),
+        0,
+        floor(random() * 31) :: int
+    ),
+    substring(
+        md5(random() :: text),
+        0,
+        floor(random() * 31) :: int
+    ),
+    substring(
+        md5(random() :: text),
+        0,
+        floor(random() * 31) :: int
+    ),
+    substring(
+        md5(random() :: text),
+        0,
+        floor(random() * 31) :: int
+    ),
+    substring(
+        md5(random() :: text),
+        0,
+        floor(random() * 31) :: int
+    ),
     now(),
     random() * 100000,
     random() * 100000,

@@ -7,7 +7,11 @@ insert into
     grades (g, name)
 select
     random() * 100,
-    substring(md5(random() :: text), 0, floor(random() * 31) :: int)
+    substring(
+        md5(random() :: text),
+        0,
+        floor(random() * 31) :: int
+    )
 from
     generate_series(0, 500);
 
