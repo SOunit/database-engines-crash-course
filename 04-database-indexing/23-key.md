@@ -4,5 +4,25 @@
 - non-key index: include column to index
 
 ```
+
 explain analyze select id, g from students where g > 80 and g < 95 order by g desc;
+```
+
+- create index for faster select query
+
+```
+create index g_idx on students(g);
+```
+
+- create another index to execute index scan
+- drop existing index
+
+```
+drop index g_idx;
+```
+
+- create new index
+
+```
+create index g_idx on students(g) include (id);
 ```
