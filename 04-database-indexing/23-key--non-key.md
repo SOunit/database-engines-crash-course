@@ -26,3 +26,9 @@ drop index g_idx;
 ```
 create index g_idx on students(g) include (id);
 ```
+
+- index with buffers
+
+```
+explain (analyze, buffers) select id, g from students where 10 < g and g < 20 order by g desc;
+```
