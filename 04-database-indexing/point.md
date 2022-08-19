@@ -25,3 +25,11 @@ explain analyze select id, name from employees where id = 5000;
 ## Index Only Scan using employees_name on employees
 
 - the best, only using indexed data
+
+# composed index
+
+- create index on (a, b)
+- where a = 1; -> fast
+- where a = 1 and b = 1; -> super fast
+- where b = 1; -> table scan!!!!
+  - left side has to be included to run composed index
