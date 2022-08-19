@@ -25,3 +25,9 @@ explain analyze select id from employees where id = 2000;
 # Parallel Seq Scan on employees
 
 - no index, full-scan, worst thing
+
+# create index
+
+```
+create index employees_name on employees(name);
+```
