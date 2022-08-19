@@ -1,3 +1,15 @@
+# start
+
+```
+docker start
+```
+
+# run postgres
+
+```
+docker exec -it pgacid psql -U postgres
+```
+
 # create
 
 ```
@@ -14,10 +26,4 @@ docker container list -a
 
 ```
 docker ps
-```
-
-# start
-
-```
-docker start
 ```
