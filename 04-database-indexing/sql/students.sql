@@ -1,6 +1,6 @@
 --key vs non-key columns
 -- make sure to run the container with at least 1gb shared memory
--- docker run --name pg —shm-size=1g -e POSTGRES_PASSWORD=postgres —name pg postgres
+-- docker run --name pg -d -e POSTGRES_PASSWORD=postgres --shm-size=1g postgres:13
 create table students (
     id serial primary key,
     g int,
