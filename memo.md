@@ -9,6 +9,8 @@
 
 - I never study DB in-depth, so let's learn
 - understanding of DB system is good for backend developer
+- to make right decision in DB design
+- to handle big access
 
 # point
 
