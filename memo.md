@@ -21,3 +21,9 @@
 - index only scan is the fastest
 - heap scan is not bad
 - heap is rows of data / pages of data
+- bitmap to batch access to disk IO
+
+# lecture feature
+
+- he repeats important concept many times
+- he bring new concept before explain, but just try to keep up
